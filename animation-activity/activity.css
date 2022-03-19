@@ -27,7 +27,7 @@ nav {
 .hamburger:hover ~ nav {
   opacity: 1;
 }
-
+/* the animation MUST have translate first, then rotate. Otherwise it won't align properly! */
 @keyframes top {
   from {transform:rotate(0);}
   to {transform: translate(0px, 34px) rotate(45deg); }
